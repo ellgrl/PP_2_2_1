@@ -49,6 +49,7 @@ public class AppConfig {
       props.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
       props.put("hibernate.format_sql", "true");
 
+
       factoryBean.setHibernateProperties(props);
       factoryBean.setAnnotatedClasses(User.class, Car.class);
 
