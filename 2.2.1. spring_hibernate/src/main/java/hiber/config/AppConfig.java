@@ -17,8 +17,6 @@ import java.util.Properties;
 
 import hiber.model.Car;
 
-
-
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement

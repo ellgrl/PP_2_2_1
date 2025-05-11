@@ -41,6 +41,21 @@ public class MainApp {
          System.out.println();
       }
 
+      System.out.println("\nTesting getUserByCarModelAndSeries:");
+      User userWithToyota = userService.getUserByCarModelAndSeries("Toyota", 4);
+      if (userWithToyota != null) {
+         System.out.println("Found user with Toyota 4: " + userWithToyota.getId());
+      } else {
+         System.out.println("User with Toyota 4 not found");
+      }
+
+      User userWithBMW = userService.getUserByCarModelAndSeries("BMW", 5);
+      if (userWithBMW != null) {
+         System.out.println("Found user with BMW 5: " + userWithBMW.getId());
+      } else {
+         System.out.println("User with BMW 5 not found");
+      }
+
       context.close();
    }
 }
